@@ -18,7 +18,7 @@ This project utilizes **CrewAI** to automate the creation of blog posts from **Y
 ## ⚙️ How It Works
 
 The process uses a multi-agent CrewAI workflow:
-![Workflow Diagram](assets/crwyt.png)
+![Workflow Diagram](crwyt.png)
 
 👥 Agent Roles
 YouTube Content Researcher Agent:
