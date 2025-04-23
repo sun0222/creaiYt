@@ -19,15 +19,16 @@ This project utilizes **CrewAI** to automate the creation of blog posts from **Y
 
 The process uses a multi-agent CrewAI workflow:
 
-```mermaid
+````mermaid
 graph LR
-    A[YouTube Video URL] --> B(YouTube Content Researcher Agent);
-    B -- Extracted Content --> C(Blog Post Writer Agent);
-    C -- Draft Blog Post --> D(Technical Editor Agent);
-    D -- Final Blog Post --> E{Optional Publisher Agent};
-    E -- Published --> F[Blog Platform];
-    D -- Final Blog Post --> G[Final Blog Post Output (e.g., file/console)];
-    E -- Not Used --> G;
+    A[YouTube Video URL] --> B[YouTube Content Researcher Agent]
+    B --> C[Blog Post Writer Agent]
+    C --> D[Technical Editor Agent]
+    D --> E{Optional Publisher Agent}
+    E --> F[Blog Platform]
+    D --> G[Final Blog Post Output: file or console]
+    E --> G
+
 👥 Agent Roles
 YouTube Content Researcher Agent:
 Extracts transcript or relevant summaries from a YouTube URL using tools or APIs.
